@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Yandex Music Animation Hider",
+  "version": "1.0.0",
+  "description": "Hides VibeAnimation_root* elements on music.yandex.ru.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.yandex.ru/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
